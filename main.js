@@ -20,11 +20,21 @@ class Field {
 	}
 	playGame() {
 		console.log(
+<<<<<<< HEAD
 			"Move your path '+' through the field '░' to get your hat 'Д'. \nmake sure to avoid the holes! 'O'"
 		);
 		while (this.win === false && this.loss === false) {
 			this.print();
 			let direction = prompt('Which direction do you want to move?');
+=======
+			"Move your path '⋽' through the field '░' to get your hat 'Д'. make sure to \navoid the holes! '⏼'"
+		);
+		while (this.win === false && this.loss === false) {
+			this.print();
+			let direction = prompt(
+				"Which direction do you want to move? ('u'(up), 'd'(down), 'l'(left), 'r'(right))"
+			);
+>>>>>>> 388710dcdbdae16a39bf6abdd0ff731552a00748
 			if (direction === 'u') {
 				this.y--;
 			} else if (direction === 'd') {
